@@ -3,9 +3,7 @@ import time
 GPIO.setmode(GPIO.BCM)
 flag = True
 out1 = 14
-IN = 15
 GPIO.setup(out1, GPIO.OUT)
-GPIO.setup(IN,GPIO.IN)
 servo1 = GPIO.PWM(out1, 50)
 servo1.start(0)
 def close():
