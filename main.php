@@ -5,16 +5,12 @@
 </head>
 <body>
 <?php
-//    ini_set('display_errors', 1);
-    $text = "Key";
-    echo "<p> $text </p>";
     if(isset($_POST['open'])) {
-        $cmd = "/usr/bin/sudo -S /usr/bin/python3 /home/pi/Key/open.py";
+        $cmd = "/usr/bin/sudo -S /usr/bin/python3 Key/open.py";
         shell_exec($cmd);
     }
     if(isset($_POST['close'])) {
-//        echo "open";
-        $cmd = "/usr/bin/sudo -S /usr/bin/python3 /home/pi/Key/close.py";
+        $cmd = "/usr/bin/sudo -S /usr/bin/python3 Key/close.py";
         shell_exec($cmd);
 ?>
 <form method="post">
