@@ -4,8 +4,8 @@ import time
 import socket
 GPIO.setmode(GPIO.BCM)
 flag = True
-out3 = 4
-GPIO.setup(out3,GPIO.IN)
+IN = 15
+GPIO.setup(IN,GPIO.IN)
 try:
     while True:
         if GPIO.input(out3) == GPIO.HIGH and not flag:
