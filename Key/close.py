@@ -5,10 +5,8 @@ flag = True
 out1 = 14
 out2 = 15
 out3 = 4
-out4 = 17
 GPIO.setup(out1, GPIO.OUT)
 GPIO.setup(out2, GPIO.OUT)
-GPIO.setup(out4,GPIO.OUT)
 GPIO.setup(out3,GPIO.IN)
 servo1 = GPIO.PWM(out1, 50)
 servo2 = GPIO.PWM(out2, 50)
