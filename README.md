@@ -3,7 +3,7 @@ SmartLock的なものを製作するスクリプトです。
 
 # Dependency
 実行環境は
-Raspberrypi zero WH
+Raspberrypi zero WH \n
 Python 3.5.3
 RPI.GPIO
 PHP 7.0
