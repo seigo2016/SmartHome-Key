@@ -25,10 +25,10 @@ def close():
 try:
     while True:
         if GPIO.input(out3) == GPIO.HIGH and not flag:
-            subprocess.call("sudo python3 /home/pi/Key/open.py",shell=True)
+            subprocess.call("sudo python3 open.py",shell=True)
             flag = not flag
         elif GPIO.input(out3) == GPIO.HIGH and flag:
-            subprocess.call("sudo python3 /home/pi/Key/close.py",shell=True)
+            subprocess.call("sudo python3 close.py",shell=True)
             flag = not flag
 except KeyboardInterrupt:
     pass
