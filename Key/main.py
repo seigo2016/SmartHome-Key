@@ -8,10 +8,10 @@ IN = 10
 GPIO.setup(IN,GPIO.IN)
 try:
     while True:
-        if GPIO.input(out3) == GPIO.HIGH and not flag:
+        if GPIO.input(IN) == GPIO.HIGH and not flag:
             subprocess.call("sudo python3 open.py",shell=True)
             flag = not flag
-        elif GPIO.input(out3) == GPIO.HIGH and flag:
+        elif GPIO.input(IN) == GPIO.HIGH and flag:
             subprocess.call("sudo python3 close.py",shell=True)
             flag = not flag
 except KeyboardInterrupt:
