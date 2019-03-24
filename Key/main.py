@@ -4,7 +4,7 @@ import time
 import socket
 GPIO.setmode(GPIO.BCM)
 flag = True
-IN = 15
+IN = 10
 GPIO.setup(IN,GPIO.IN)
 try:
     while True:
